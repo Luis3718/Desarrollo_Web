@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularios</title>
+    </head>
+
+    <body>
+        <div style="width: 100vw; height: 100vh;">
+            <div style="width: auto; border: 1px solid black; height: auto; overflow: hidden; float:left;">
+                <h1>Campos de Texto</h1>
+                <form>
+                    <label>Nombre: </label>
+                    <input type="text" required>
+                    <br><br>
+                    <label>Apellido Paterno: </label>
+                    <br>
+                    <input type="text" pattern="[A-Za-z}" title="El formato solo es alfabetico" style="width: 100%; line-height: 100%;">
+                    <br><br>
+                    <h1>password</h1>
+                    <label>Usuario: </label>
+                    <input type="email">
+                    <br><br>
+                    <label>Contraseña: </label>
+                    <br>
+                    <input type="password" >
+                    <br><br>
+                    <input type="">
+                    <br><br>
+                    <input type="submit" value="Enviar" formmethod="post" formnovalidate autofocus disabled><!--disabled-->
+                </form>
+            </div>
+            
+            <div style="width: auto; border: 1px solid black; height: auto; overflow: hidden; float:left;">
+                <form>
+                    <h1>Radio Button</h1>
+                    <label>Escoja la respuesta adecuada</label><br>
+                    <input type="radio" name="eleccion" value="opc1">Soy la indicada<br>
+                    <input type="radio" name="eleccion" value="opc2">
+                    <label>No yo lo soy</label><br>
+                    <input type="radio" name="eleccion" value="opc3">Tal vez lo sea yo
+                    <br><br>
+                    <hr>
+                    <label>CheckBox</label><br>
+                    <input type="checkbox" name="eleccion" value="opc1">Soy la indicada<br>
+                    <input type="checkbox" name="eleccion" value="opc2">
+                    <label>No yo lo soy</label><br>
+                    <input type="checkbox" name="eleccion" value="opc3">Tal vez lo sea yo
+                    <br><br>
+                    <input type="reset">
+                </form>
+            </div>
+
+            <div style="width: auto; border: 1px solid black; height: auto; overflow: hidden; float:left;">
+                <form>
+                    <h1>Botones</h1>
+                    <label>Submit/Enviar: </label>
+                    <input type="submit">
+                    <br><br>
+                    <label>Boton: </label>
+                    <input type="button" value="Aceptar" onclick="alert('Hola Mundo')"><!--Elemento Estatico-->
+                    <br><br>
+                    <label>Boton: </label>
+                    <button >Hola Mundo</button>
+                    <br><br>
+                    <label>Reseteo: </label>
+                    <input type="reset" autofocus>
+                </form>
+            </div>
+
+            <div style="width: auto; border: 1px solid black; height: auto; overflow: hidden; float:left;">
+                <form>
+                    <h1>Calendario</h1>
+                    <label>date: </label>
+                    <input type="date" min="1989-07-01" max="2032-11-30"> 
+                    <br><br>
+                    <label>datetime: </label>
+                    <input type="datetime">
+                    <br><br>
+                    <label>datetime-local</label>
+                    <input type="datetime-local">
+                    <br><br>
+                    <label>Tiempo: </label>
+                    <input type="time">
+                    <br><br>
+                    <label>Semana: </label>
+                    <input type="week">
+                    <br><br>
+                    <label>Mes: </label>
+                    <input type="month">
+                </form>
+            </div>
+
+            <div style="width: auto; border: 1px solid black; height: auto; overflow: hidden; float:left;">
+                <form>
+                    <h1>Selección única: </h1>
+                    <select size="2">
+                        <option value="Opcion 1">Opcion 1</option>
+                        <option value="Opcion 2">Opcion 2</option>
+                        <option value="Opcion 3">Opcion 3</option>
+                        <option value="Opcion 4">Opcion 4</option>
+                        <option value="Opcion 5">Opcion 5</option>
+                    </select> 
+                    <hr>
+                    <h1>Selección Multiple: </h1>
+                    <select size="3" multiple>
+                        <option value="Opcion 1">Opcion 1</option>
+                        <option value="Opcion 2">Opcion 2</option>
+                        <option value="Opcion 3">Opcion 3</option>
+                        <option value="Opcion 4">Opcion 4</option>
+                    </select> 
+                    <hr>
+                    <h1>Datalist: </h1> 
+                    <input list="Opciones" name="opc">
+                    <datalist id="Opciones">
+                        <option value="La mejor opcion">Aqui esta</option>
+                        <option value="Todos aqui"></option>
+                        <option>Eligeme a mi</option>
+                        <option value="Tendras 10"></option>
+                        <option value="o tal vez no"></option>
+                    </datalist>
+                    <input type="submit">
+                </form>
+            </div>
+
+            <div style="width: auto; border: 1px solid black; height: auto; overflow: hidden; clear: both; float: left;">
+                <form>
+                    <h1>Textarea:
+                    <textarea name="Mensje" rows="10" cols="10"></textarea>
+                    <hr>
+                    <h1>Textarea con texto:
+                    <textarea name="Mensje" rows="10" cols="10" style="width: 10vw; height: 10vh;">Escriba aqui</textarea>
+                </form>
+            </div>
+
+            <div style="width: auto; border: 1px solid black; height: auto; overflow: hidden;float: left;">
+                <form>
+                    <label style="color:purple">Fieldset nos permite una agrupación de elementos: </label>
+                    <br><br>
+                    <fieldset>
+                        <legend>Datos Personales: </legend>
+                        <label>Usuario:</label>
+                        <input type="text">
+                        <br><br>
+                        <label>Apellido Paterno: </label>
+                        <br>
+                        <input type="text">
+                        <br><br>
+                        <button style="background-color: aqua;">Hola</button>
+                    </fieldset>
+                    <button style="background-color: aqua;">Hola</button>
+                    
+                    <fieldset>
+                        <legend>Datos Personales2: </legend>
+                        <label>Usuario:</label>
+                        <input type="text">
+                        <br><br>
+                        <label>Apellido Paterno: </label>
+                        <br>
+                        <input type="text">
+                        <br><br>
+                        <button style="background-color: aqua;">Hola</button>
+                        <br>
+                        <fieldset>
+                            <legend>Datos Personales2: </legend>
+                            <label>Usuario:</label>
+                            <input type="text">
+                            <br><br>
+                            <label>Apellido Paterno: </label>
+                            <br>
+                            <input type="text">
+                            </fieldset>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

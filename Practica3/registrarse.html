@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de viajes</title>
+    <link href="../Practica3/Recursos/CSS/Estilos.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <head>
+        <h1><img src="../Practica3/Recursos/Imagenes/Playaicono.png" style="float: lefts;" width="29 px" height="29 px">Agencia de viajes</h1>
+        <nav>
+            <ul class="horizontal">
+                <li>Turismo de naturaleza</li>
+                <li>Turismo de salud</li>
+                <li><a href="../Practica3/naturales.html"> Turismo de naturaleza </a></li>
+                <li><a href="../Practica3/playas.html"> Turismo de sol y playa </a></li>
+                <li><a href="../Practica3/registrarse.html"> Agenda tu viaje </a></li>
+                <li><a href="../Practica3/index.html"> Inicio </a></li>
+            </ul>
+        </nav>
+        <br> 
+        <hr>
+        <header class="cabeceraform">
+            <h2> Agenda tu viaje ahroa mismo </h2>
+        </header>
+        <div class="formulario">
+            <br>
+            <div class="formulario_der">
+                <form>
+                    <h3>Fecha de reservacion</h3>
+                    <label>llegada: </label>
+                    <input type="date" min="1989-07-01" max="2032-11-30"> 
+                    <br><br>
+                    <label>Salida: </label>
+                    <input type="date" min="1989-07-01" max="2032-11-30"> 
+                    <br><br>
+                    <select size="3" multiple>
+                        <option value="Opcion 1">Los cabos</option>
+                        <option value="Opcion 2">Riviera maya</option>
+                        <option value="Opcion 3">Oaxaca</option>
+                        <option value="Opcion 4">Tijuana</option>
+                        <option value="Opcion 5">Chuapas</option>
+                        <option value="Opcion 6">Michoacan</option>
+                        <option value="Opcion 7">Toluca</option>
+                    </select>
+                </form>    
+            </div>
+            <form>
+                <label>Nombre: </label>
+                <input type="text" required>
+                <br><br>
+                <label>Apellido Paterno: </label>
+                <input type="text" pattern="[A-Za-z}" title="El formato solo es alfabetico" required>
+                <br><br>
+                <label>Apellido Materno: </label>
+                <input type="text" pattern="[A-Za-z}" title="El formato solo es alfabetico" required>
+                <br><br>
+                <label>Correo electronico: </label>
+                <input type="text" pattern="[A-Za-z}" title="El formato solo es alfabetico" required>
+                <br><br>
+                <label>Telefono: </label>
+                <input type="number" required>
+                <br><br>
+                <input type="button" value="Registrarse" onclick="alert('Registro exitoso')">
+                <input type="reset">      
+            </form> 
+        </div>
+
+    </head>
+    <hr>
+    <section class="pie">
+        <p><h3>Materia: Tecnologias para el desarrollo de aplicaciones web</h4></p>
+        <p><h3>Alumno: Alvarado Romero Luis Manuel</h4></p>
+        <p><h3>Grupo: 4CM1</h4></p>
+        <footer style="background-color: gray;">
+            <ul class="horizontal-footer">
+                <li><a href="../Practica3/index.html">Aviso legal</a></li>
+                <li><a href="../Practica3/index.html">Privacidad</a></li>
+                <li><a href="../Practica3/index.html">Contactar</a></li>
+            </ul>
+        </footer>
+    </section>
+</body>
+</html>
