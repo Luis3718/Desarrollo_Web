@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Recursos/CSS/estilos.css" type="text/css">
+</head>
+<body>
+    <div class="encabezado">
+        <h1 class="encabezado">Examen primer parcial</h1>
+    </div>
+    <div class="medio" >
+        <br>
+        <h3>&nbsp;Ingrese la estrella que quiere registrar</h3>
+        <div class="formulario_der">
+            <form>
+                <h3> &nbsp;&nbsp;&nbsp; Fecha de avistamiento</h3>
+                <label> &nbsp;&nbsp;&nbsp;  Fecha del avistamiento: </label>
+                <input type="date" min="1989-07-01" max="2032-11-30"> 
+                <br><br>
+                <label> &nbsp;&nbsp;&nbsp; Constelacion de avistamiento: </label>
+                <div class="padre">
+                    <select size="4" multiple>
+                        <option value="Opcion 1">Los cabos</option>
+                        <option value="Opcion 2">Riviera maya</option>
+                        <option value="Opcion 3">Oaxaca</option>
+                        <option value="Opcion 4">Tijuana</option>
+                        <option value="Opcion 5">Chuapas</option>
+                        <option value="Opcion 6">Michoacan</option>
+                        <option value="Opcion 7">Toluca</option>
+                        <option value="Opcion 8">Chuapas</option>
+                        <option value="Opcion 9">Michoacan</option>
+                        <option value="Opcion 10">Toluca</option>
+                    </select>
+                </div>
+            </form>    
+        </div>
+        <form>
+            <label>&nbsp;&nbsp;Nombre de la estrella:</label>  
+            <input type="text" required>
+            <br><br>
+            <fieldset class="agrup">
+            <label> Datos del descubridor: </label>
+            <br><br>
+            <label>Nombre: </label>
+            <input type="text" require>
+            <label> &nbsp;&nbsp;&nbsp; Apellido Paterno: </label>
+            <input type="text" pattern="[A-Za-z}" title="El formato solo es alfabetico" required>
+            <label> &nbsp;&nbsp;&nbsp; Apellido Materno: </label>
+            <input type="text" pattern="[A-Za-z}" title="El formato solo es alfabetico" required>
+            <br><br>
+            <label>Correo electronico: </label>
+            <input type="email" pattern="..+@gmail.com" size="50" required>
+            <label> &nbsp;&nbsp;&nbsp; Telefono: </label>
+            <input type="number" required>
+            <br><br>
+            <label> Responda el siguiente formulario</label>
+            <br><br>
+            <label> ¿Que tipo de estrella es?</label>
+            <input type="radio" name="eleccion" value="opc1"> Enana
+            <input type="radio" name="eleccion" value="opc2"> Subenana
+            <input type="radio" name="eleccion" value="opc2"> Enana blanca
+            <label> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; ¿Que tipo de telescopio utilizo?</label>
+            <input type="radio" name="eleccion" value="opc3">Galileano
+            <input type="radio" name="eleccion" value="opc4">Newtoneano
+            <input type="radio" name="eleccion" value="opc5">Catadioptrico
+            <br><br>
+            <input type="button" value="Registrarse" onclick="alert('Registro exitoso')">
+            <input type="reset">
+            </fieldset>
+        </form> 
+    </div>
+    <div class="pie">
+        <hr>
+        <h2 class="letras">Materia: Tecnologias de deesarrollo de aplicaciones web</h2>
+        <h2 class="letras">Alumno: Alvarado Romero Luis Manuel</h2>
+        <h2 class="letras">Grupo: 4CM1</h2>
+    </div>
+</body>
+</html> 
