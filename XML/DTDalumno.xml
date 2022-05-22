@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE escuela[
+    <!ELEMENT escuela (alumno+)>
+    <!ELEMENT alumno (CURP, nombre, historiaAcademica)>
+    <!ELEMENT CURP (#PCDATA)>
+    <!ELEMENT nombre (apellidop+,apellidom+,nombres+)>
+    <!ELEMENT apellidop (#PCDATA)>
+    <!ELEMENT apellidom (#PCDATA)>
+    <!ELEMENT nombres (#PCDATA)>
+    <!ELEMENT historiaAcademica (asignatura*)>
+    <!ELEMENT asignatura (#PCDATA)>
+    <!ATTLIST asignatura calificacion CDATA #REQUIRED>
+    <!ATTLIST asignatura fechaA CDATA #REQUIRED>
+    <!ATTLIST asignatura TipoExamen CDATA #REQUIRED>
+]>
+
+<escuela>
+    <alumno>
+        <CURP>AARL010308HDFLMSA2</CURP>
+        <nombre>
+            <apellidop>Alvarado</apellidop>
+            <apellidom>Romero</apellidom>
+            <nombres>Luis Manuel</nombres>
+        </nombre>
+        <historiaAcademica>
+            <asignatura calificacion="9" fechaA="18/08/2020" TipoExamen="Practico">Programacion</asignatura>
+        </historiaAcademica>
+    </alumno>
+    <alumno>
+        <CURP>ASOL990223HDFLMSA2</CURP>
+        <nombre>
+            <apellidop>Samora</apellidop>
+            <apellidom>Olmos</apellidom>
+            <nombres>Lucas</nombres>
+        </nombre>
+        <historiaAcademica>
+        </historiaAcademica>
+    </alumno>
+</escuela>
